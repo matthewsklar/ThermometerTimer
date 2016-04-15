@@ -1,0 +1,28 @@
+#thermometer {
+    display: inline-block;
+}
+
+#thermometer img {
+    z-index: 4;
+    position: absolute;
+
+    width: 48px;
+    height: 48px;
+}
+
+#mercury {
+    z-index: 3;
+    position: relative;
+
+    height: 48px;
+}
+
+.animateThermometer {
+    -webkit-animation-name: thermometer;
+    -webkit-animation-duration: 10s;
+}
+
+@-webkit-keyframes thermometer {
+    0%   {background-color:red; width:48px; }
+    100%  {background-color:green; width:0px; }
+}
